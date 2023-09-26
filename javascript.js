@@ -33,6 +33,10 @@ function game () {
     for (let i=0; i < 5; i++) {
         const result=playRound();
         console.log(result);
+    }
+    if (playerScore > computerScore) {console.log ('You win! Congratulations!')
+    }else if (computerScore > playerScore) {console.log('You lose! Womp womp.')
+    }else{console.log("It's a tie! Play again?")
 }
 }
 //create a loop 
