@@ -10,6 +10,9 @@ function getComputerChoice () {
     };
 }
 
+let playerScore=0;
+let computerScore=0;
+
 //Create a playRound function for rock paper scissors,
 //returning whether or not you win or lose
 
@@ -21,8 +24,8 @@ function playRound() {
     } else if 
      (computerChoice === "Rock" && playerChoice === "Paper" || 
      computerChoice === "Paper" && playerChoice === "Scissors" || 
-     computerChoice === "Scissors" && playerChoice === "Rock") {return `You win! ${playerChoice} beats ${computerChoice}!`
-    } else {return `You lose! ${computerChoice} beats ${playerChoice}!`}
+     computerChoice === "Scissors" && playerChoice === "Rock") { playerScore +=1; return `You win! ${playerChoice} beats ${computerChoice}!`
+    } else {computerScore +=1; return `You lose! ${computerChoice} beats ${playerChoice}!`}
 
 }
 
